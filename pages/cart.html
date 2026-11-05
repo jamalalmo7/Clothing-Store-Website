@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - ALTURA</title>
+    <link rel="stylesheet" href="../css/No2-style.css">
+</head>
+<body>
+    
+    <div id="particles-js"></div>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
+<div class="cart-container">
+    <h2>Your Shopping Bag</h2>
+    <div class="cart-layout">
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="../images/general/classic-jacket.jpg" alt="Premium Parka">
+                <div class="item-info">
+                    <h4>Premium Parka</h4>
+                    <span>Size: L</span>
+                </div>
+                <div class="quantity">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                </div>
+                <span class="price">$120</span>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <h3>Summary</h3>
+            <div class="summary-line"><span>Subtotal:</span> <span>$120</span></div>
+            <div class="summary-line"><span>Shipping:</span> <span>Free</span></div>
+            <hr>
+            <div class="summary-line total"><span>Total:</span> <span>$120</span></div>
+            <button class="checkout-btn">Checkout Now</button>
+        </div>
+    </div>
+</div>
+</body>
+
+
+
+
+
+
+
+  <script>
+    particlesJS("particles-js", {
+  "particles": {
+    "number": { "value": 150, "density": { "enable": true, "value_area": 800 } },
+    "color": { "value": "#ffffff" }, /* لون الثلج أبيض */
+    "shape": { "type": "circle" },
+    "opacity": { "value": 0.5, "random": true },
+    "size": { "value": 3, "random": true },
+    "line_linked": { "enable": false }, /* لا نريد خطوطاً بين النقاط ليظهر كثلج */
+    "move": {
+      "enable": true,
+      "speed": 2, /* سرعة تساقط الثلج */
+      "direction": "bottom", /* التساقط للأسفل */
+      "random": true,
+      "straight": false,
+      "out_mode": "out"
+    }
+  },
+  "interactivity": {
+    "events": {
+      "onhover": { "enable": true, "mode": "bubble" } /* الثلج يتفاعل مع الماوس */
+    }
+  }
+});
+  </script>
+
+</html>

@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Clothes Store</title>
+    <link rel="stylesheet" href="css/No2-style.css" />
+  </head>
+
+  <body>
+    <div id="particles-js"></div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <span class="logo">ALTURA</span>
+        </div>
+
+
+
+        
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/Collection.html">Collection</a></li>
+            <li><a href="pages/Collection.html">Category</a></li>
+            <li><a href="#About">About</a></li>
+          </ul>
+        </nav>
+
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Search..." />
+          <button class="search-btn">Search</button>
+        </div>
+
+        <a class="cart-button" href="pages/cart.html"
+          ><img src="images/general/cart-removebg-preview.png" class="cart" />
+        </a>
+        <div class="icon">
+          <a href="pages/login.html"><ion-icon name="person-outline"></ion-icon></a>
+          <a href="pages/login.html"><p>Log/Sign in</p></a>
+          
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ========================================= section 1 =================== -->
+
+      <section class="hero">
+        <div class="left-content">
+          <a href="" class="btn">2020 Collections</a>
+
+          <div class="text">
+            <h1>
+              You should always <br />
+              feel pretty
+            </h1>
+
+            <p>Clothes that are sure to heat up your winter.</p>
+          </div>
+
+          <div class="arrow-icons">
+            <img src="images/general/pointer-removebg-preview.png" />
+            <img src="images/general/black.jpg" class="btnn" />
+          </div>
+        </div>
+        <div class="right-content">
+          <img src="images/general/5942748108208934251 (1).jpg" class="my-image" />
+        </div>
+      </section>
+      <!-- ========================================= section 2 =================== -->
+
+      <section class="shops">
+        <div class="men">
+          <span>men</span>
+          <a href="pages/men-shop.html" target="_blank" class="shop-btn">Shop Now</a>
+        </div>
+        <div class="women">
+          <span>women</span>
+          <a href="pages/woman-shop.html" target="_blank" class="shop-btn"
+            >Shop Now</a
+          >
+        </div>
+        <div class="child">
+          <span>children</span>
+          <a href="pages/kids-shop.html" target="_blank" class="shop-btn">Shop Now</a>
+        </div>
+      </section>
+      <!-- ========================================= section 3 =================== -->
+      <section class="explore-style">
+        <div class="section-title">
+          <h2>Explore Your Style</h2>
+          <p>
+            Choose and Coordinate from our curated collection to suit your taste
+          </p>
+        </div>
+
+        <div class="product-grid">
+           <div class="product-card">
+            <img src="images/general/classic-jacket.jpg" alt="Winter jacket" />
+            <h3>Classic Jacket</h3>
+            <span class="price">$100</span>
+            <button class="btn-add-to-cart">Add to cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="images/general/sof-wool-sweater.jpg" alt="Sweater" />
+            <h3>ٍSoft wool sweater</h3>
+            <span class="price">$50</span>
+            <button class="btn-add-to-cart">Add to cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="images/general/scarf.jpg" alt="Scarf" />
+            <h3>Scarf set</h3>
+            <span class="price">$35</span>
+            <button class="btn-add-to-cart">Add to cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="images/general/parka.jpg" alt="Parka" />
+            <h3>Parka</h3>
+            <span class="price">$85</span>
+            <button class="btn-add-to-cart">Add to cart</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h2 class="footer-logo">ALTURA</h2>
+          <p>Your premium destination for elegance and style</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/Collection.html">Collection</a></li>
+            <li><a href="#About">About us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <p>Email:support@altura.com</p>
+          <p>sana'a yemen</p>
+        </div>
+      </div>
+      <div class="footer-botom">
+        <p>&copy;2026 ALTURA. All rights reserved.</p>
+      </div>
+
+      <div id="About">
+        <h3>Who we are</h3>
+        <p>We believe that elegance is a right for everyone. <br>
+          We provide a diverse collection of the finest clothing for men,women and children, <br> with a full 
+          commitment to offering a comfortable and fast shopping experience. <br>
+          &copy;jamalalmo74@jamil.com <br>
+          🎇🎇🎆🎇🎇
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+  </body>
+
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 150, density: { enable: true, value_area: 800 } },
+        color: { value: "#ffffff" } /* لون الثلج أبيض */,
+        shape: { type: "circle" },
+        opacity: { value: 0.5, random: true },
+        size: { value: 3, random: true },
+        line_linked: {
+          enable: false,
+        } /* لا نريد خطوطاً بين النقاط ليظهر كثلج */,
+        move: {
+          enable: true,
+          speed: 2 /* سرعة تساقط الثلج */,
+          direction: "bottom" /* التساقط للأسفل */,
+          random: true,
+          straight: false,
+          out_mode: "out",
+        },
+      },
+      interactivity: {
+        events: {
+          onhover: {
+            enable: true,
+            mode: "bubble",
+          } /* الثلج يتفاعل مع الماوس */,
+        },
+      },
+    });
+  </script>
+</html>
+ 
