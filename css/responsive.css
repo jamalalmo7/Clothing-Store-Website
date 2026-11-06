@@ -1,0 +1,473 @@
+/* ==========================================================================
+   ALTURA CLOTHES STORE - RESPONSIVE STYLESHEET
+   Separated modular responsive rules across mobile, tablet, and desktop.
+   Maintains all original designs, elements, and styles without breaking desktop.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   GLOBAL FLUID RESETS & CONTAINER SAFETY
+   -------------------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ==========================================================================
+   1. TABLET & LAPTOP ADAPTATIONS (max-width: 1024px)
+   ========================================================================== */
+@media (max-width: 1024px) {
+  /* Header & Navbar */
+  header {
+    padding: 15px 4%;
+  }
+
+  .navbar {
+    height: auto;
+    min-height: 80px;
+  }
+
+  .logo {
+    font-size: 26px;
+    letter-spacing: 4px;
+  }
+
+  nav {
+    padding-left: 25px;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .search-container {
+    margin-left: 20px;
+  }
+
+  .search-input {
+    width: 120px;
+  }
+
+  .cart {
+    margin-left: 25px;
+    width: 35px;
+  }
+
+  .icon {
+    margin-left: 20px;
+    font-size: 26px;
+  }
+
+  /* Hero Section */
+  .hero {
+    margin-left: 0;
+    padding-top: 130px;
+    gap: 20px;
+  }
+
+  .left-content {
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+
+  .right-content {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .my-image {
+    height: 400px;
+    max-height: 80vh;
+  }
+
+  /* Products Grid in Index */
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  /* Cart Layout */
+  .cart-layout {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 20px;
+  }
+}
+
+/* ==========================================================================
+   2. MOBILE & TABLET PORTRAIT (max-width: 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* Header & Navbar flow smoothly instead of absolute overlap */
+  header {
+    position: relative;
+    padding: 15px 5%;
+    background: rgba(26, 26, 46, 0.95);
+    backdrop-filter: blur(10px);
+  }
+
+  .navbar {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .logo {
+    font-size: 24px;
+    letter-spacing: 3px;
+  }
+
+  /* Right-side quick controls (cart + login) grouped together */
+  .cart {
+    margin-left: 12px;
+    width: 32px;
+  }
+
+  .icon {
+    margin-left: 12px;
+    font-size: 22px;
+    padding: 3px 8px;
+    border-radius: 6px;
+  }
+
+  .icon p {
+    font-size: 11px;
+  }
+
+  /* Navigation Bar full width below logo */
+  nav {
+    width: 100%;
+    order: 3;
+    padding-left: 0;
+    margin-top: 5px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin: 0;
+  }
+
+  nav ul li a {
+    font-size: 15px;
+    padding: 4px 6px;
+  }
+
+  /* Search Container full width centered */
+  .search-container {
+    order: 4;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 8px;
+    justify-content: center;
+  }
+
+  .search-input {
+    width: 65%;
+    max-width: 220px;
+  }
+
+  /* Main & Hero Layout */
+  main {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-top: 25px;
+    margin-left: 0;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .left-content {
+    order: 2;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .right-content {
+    order: 1;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: clamp(28px, 6.5vw, 38px);
+    margin-top: 15px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .arrow-icons {
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  .arrow-icons img {
+    margin: 0 10px;
+  }
+
+  .my-image {
+    width: 260px;
+    height: 260px;
+    max-width: 85%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+
+  /* Category Shops Section */
+  .shops {
+    padding: 30px 0;
+    gap: 20px;
+  }
+
+  .shops div {
+    width: 100%;
+    max-width: 340px;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+
+  /* Explore Style Section */
+  .explore-style {
+    padding: 20px 2% 50px;
+  }
+
+  .section-title h2 {
+    font-size: clamp(24px, 5.5vw, 32px);
+  }
+
+  .section-title p {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .product-card {
+    border-radius: 15px;
+  }
+
+  .product-card img {
+    height: 320px;
+  }
+
+  /* Footer Section */
+  .footer-container {
+    padding: 30px 5%;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-col {
+    min-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #About {
+    margin: 15px 3%;
+    padding: 20px 15px;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  #About h3 {
+    font-size: 22px;
+  }
+
+  /* Subpages: Animated Bounce Title (MEN'S-AREA, WOMEN-AREA, KIDS-AREA) */
+  h1 {
+    margin-top: 30px !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 2px !important;
+    padding: 0 10px;
+  }
+
+  h1 span {
+    font-size: clamp(1.4rem, 4.5vw, 2.2rem) !important;
+  }
+
+  /* Subpages: Hello Picture Banners */
+  .main-men .hello-pic,
+  .main-women .hello-pic,
+  .main-kid .hello-pic {
+    width: 90% !important;
+    max-width: 380px !important;
+    height: 180px !important;
+    margin: 0 auto;
+  }
+
+  .main-men .hello-pic:hover,
+  .main-women .hello-pic:hover,
+  .main-kid .hello-pic:hover {
+    height: 220px !important;
+  }
+
+  .break-after-hello-pic {
+    margin-top: 30px;
+  }
+
+  /* Subpages: Products Grid */
+  .products-section {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 20px 3%;
+    gap: 18px;
+  }
+
+  .product-card-allgender {
+    padding: 15px;
+  }
+
+  .product-card-allgender img {
+    height: 200px;
+  }
+
+  .product-card-allgender h3 {
+    font-size: 17px;
+  }
+
+  /* Cart Page */
+  .cart-container {
+    padding: 25px 4%;
+  }
+
+  .cart-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .cart-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .cart-items, .cart-summary {
+    padding: 18px;
+  }
+
+  .cart-item {
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cart-item img {
+    width: 65px;
+  }
+}
+
+/* ==========================================================================
+   3. SMALL SMARTPHONES (max-width: 480px)
+   ========================================================================== */
+@media (max-width: 480px) {
+  header {
+    padding: 12px 3%;
+  }
+
+  .logo {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  nav ul {
+    gap: 8px 12px;
+  }
+
+  nav ul li a {
+    font-size: 13.5px;
+  }
+
+  .search-input {
+    width: 60%;
+    font-size: 13px;
+  }
+
+  .search-btn {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .hero .btn {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+
+  .my-image {
+    width: 210px;
+    height: 210px;
+  }
+
+  .shops div {
+    height: 160px;
+  }
+
+  .shops span {
+    font-size: 20px;
+  }
+
+  .products-section {
+    grid-template-columns: 1fr;
+    padding: 15px 3%;
+  }
+
+  .product-card-allgender img {
+    height: 240px;
+  }
+
+  h1 span {
+    font-size: 1.25rem !important;
+  }
+}
